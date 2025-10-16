@@ -28,7 +28,7 @@ import './assets/wp-content/plugins/elementor/assets/lib/animations/styles/e-ani
 import './assets/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.minb175.css';
 import './assets/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.minb175.css';
 
-import './assets/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.minf25c.css';
+// Elementor icons removed to avoid CORS issues - using CDN alternatives
 
 import './assets/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css';
 
@@ -46,7 +46,7 @@ import './assets/wp-content/plugins/the-events-calendar/src/resources/css/integr
 import './assets/wp-content/plugins/revslider/sr6/assets/css/rs67a23.css';
 
 import './assets/wp-includes/css/buttons.min0899.css';
-import './assets/wp-includes/css/dashicons.min0899.css';
+// Dashicons removed to avoid CORS issues - using CDN alternatives
 import './assets/wp-includes/css/media-views.min0899.css';
 import './assets/wp-includes/js/imgareaselect/imgareaselect3bf4.css';
 import './assets/wp-includes/js/mediaelement/mediaelementplayer-legacy.min1f61.css';
@@ -55,11 +55,9 @@ import './assets/wp-includes/js/mediaelement/wp-mediaelement.min0899.css';
 import './assets/wp-content/themes/funden/assets/css/custom_script0899.css';
 import './assets/wp-content/themes/funden/assets/css/woocommerce6a9f.css';
 import './assets/wp-content/themes/funden/assets/css/wpcf0899.css';
-import './assets/wp-content/themes/funden/assets/css/line-awesome/css/line-awesome.min0899.css';
+// Line Awesome icons are now loaded via CDN in index.html to avoid CORS issues
 import './assets/wp-content/themes/funden/assets/js/magnific/magnific-popup0899.css';
 import './assets/wp-content/themes/funden/assets/js/scroll/jquery.mCustomScrollbar.min0899.css';
-
-import './assets/css/line-awesome.min0899.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
