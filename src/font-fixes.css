@@ -1,0 +1,120 @@
+/* Font fixes to resolve CORS issues */
+
+/* Override external font URLs with local fallbacks */
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local("Font Awesome 5 Brands"), local("FontAwesome5Brands-Regular");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: local("Font Awesome 5 Free"), local("FontAwesome5Free-Solid");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local("Font Awesome 5 Free"), local("FontAwesome5Free-Regular");
+}
+
+@font-face {
+  font-family: "Line Awesome";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local("Line Awesome"), local("LineAwesome-Regular");
+}
+
+@font-face {
+  font-family: "Line Awesome";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: local("Line Awesome"), local("LineAwesome-Solid");
+}
+
+@font-face {
+  font-family: "eicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local("eicons"), local("ElementorIcons");
+}
+
+/* Fallback for missing icons - use Unicode symbols */
+.fas, .fa, .fab, .far, .fal, .fad {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", sans-serif;
+}
+
+.las, .lar, .lab, .lal, .lad {
+  font-family: "Line Awesome", sans-serif;
+}
+
+.eicon, [class*="eicon-"], [class^="eicon-"] {
+  font-family: "eicons", sans-serif;
+}
+
+/* Ensure icons display properly even without fonts */
+.fas::before, .fa::before, .fab::before, .far::before, .fal::before, .fad::before,
+.las::before, .lar::before, .lab::before, .lal::before, .lad::before,
+.eicon::before, [class*="eicon-"]::before, [class^="eicon-"]::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Specific icon fallbacks for common icons used in the theme */
+.fa-arrow-up::before { content: "↑"; }
+.fa-arrow-right::before { content: "→"; }
+.fa-search::before { content: "🔍"; }
+.fa-user::before { content: "👤"; }
+.fa-user-plus::before { content: "👤+"; }
+.fa-envelope::before { content: "✉"; }
+.fa-map-marker-alt::before { content: "📍"; }
+.fa-phone::before { content: "📞"; }
+.fa-chart-line::before { content: "📈"; }
+.fa-medal::before { content: "🏅"; }
+.fa-codepen::before { content: "CodePen"; }
+.fa-chart-area::before { content: "📊"; }
+.fa-twitter::before { content: "🐦"; }
+.fa-facebook::before { content: "f"; }
+.fa-instagram::before { content: "📷"; }
+.fa-pinterest::before { content: "📌"; }
+.fa-linkedin::before { content: "in"; }
+.fa-clock::before { content: "🕐"; }
+.fa-times-circle::before { content: "✕"; }
+.fa-bars::before { content: "☰"; }
+.fa-user-circle::before { content: "👤"; }
+.fa-arrow-right::before { content: "→"; }
+
+/* Button icon fixes for React Icons */
+.btn-icon {
+  margin-left: 8px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.btn-theme .btn-icon,
+.btn-border-white .btn-icon {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0;
+}
+
+.btn-theme,
+.btn-border-white {
+  position: relative;
+  padding-right: 50px !important;
+}

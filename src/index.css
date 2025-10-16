@@ -1,13 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-roboto-slab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.font-shadows-into-light {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+.nav-link {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Logo styling */
+.gsc-logo img {
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+.logo-mobile img {
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+
+.gva-offcanvas-content .top-canvas img {
+  max-height: 50px;
+  width: auto;
+  height: auto;
 }
