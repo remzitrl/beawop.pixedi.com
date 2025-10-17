@@ -98,6 +98,10 @@
     padding: 110px 0px 110px 0px;
 }
 
+.pb-zero {
+    padding-bottom: 0px !important;
+}
+
 .elementor-29 .elementor-element.elementor-element-38c4e84>.elementor-element-populated {
     padding: 0px 15px 0px 15px;
 }
@@ -313,7 +317,7 @@
 
 .elementor-29 .elementor-element.elementor-element-34cd595:not(.elementor-motion-effects-element-type-background),
 .elementor-29 .elementor-element.elementor-element-34cd595>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: var(--e-global-color-secondary);
+    background-color: #c6dee4;
 }
 
 .elementor-29 .elementor-element.elementor-element-34cd595 {

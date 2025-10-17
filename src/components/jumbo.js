@@ -81,7 +81,7 @@ const Jumbo = () => {
       </section>
 
 
-      <section id="who-we-are" className="elementor-section elementor-top-section elementor-element elementor-element-2087ad2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2087ad2" data-element_type="section">
+      <section id="who-we-are" className="elementor-section elementor-top-section elementor-element elementor-element-2087ad2 elementor-section-boxed elementor-section-height-default elementor-section-height-default pb-zero" data-id="2087ad2" data-element_type="section">
         <div className="elementor-container elementor-column-gap-default">
           <div className="elementor-column elementor-col-100 elementor-top-column elementor-element" data-element_type="column">
             <div className="elementor-widget-wrap elementor-element-populated">

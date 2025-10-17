@@ -233,7 +233,7 @@
 }
 
 /* Footer Background Overlay */
-.elementor-background-overlay {
+#wp-footer .elementor-background-overlay {
   background-color: #c6dee4 !important;
 }
 
