@@ -17,10 +17,10 @@ function Explore() {
             <section className="elementor-section elementor-top-section elementor-element elementor-element-e1ff7d0 elementor-section-boxed elementor-section-height-default elementor-section-height-default">
                 <div className="elementor-background-video-container elementor-hidden-mobile">
                     <iframe
-                        frameborder="0" 
-                        allowfullscreen="" 
+                        frameBorder="0" 
+                        allowFullScreen="" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
                         id="widget2"
                         className="elementor-background-video-embed"
                         src="https://www.youtube.com/embed/NrmMk1Myrxc?autoplay=1&mute=1&controls=0&rel=0&loop=1&playlist=NrmMk1Myrxc"

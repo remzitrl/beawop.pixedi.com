@@ -62,7 +62,7 @@ const Jumbo = () => {
           <div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0ac4c8c" data-id="0ac4c8c" data-element_type="column">
             <div className="elementor-widget-wrap elementor-element-populated">
               <div className="elementor-element elementor-element-33059cd elementor-widget elementor-widget-image" data-id="33059cd" data-element_type="widget" data-widget_type="image.default">
-                <div className="elementor-widget-container">
+                <div className="elementor-widget-container" style={{borderRadius: '20px', overflow: 'hidden'}}>
                   <img decoding="async" width="970" height="594" src={image1} className="attachment-full size-full wp-image-1245" alt="" sizes="(max-width: 970px) 100vw, 970px" />
                 </div>
               </div>

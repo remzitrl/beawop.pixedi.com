@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaFacebookSquare, FaInstagram, FaTwitter, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaPinterest, FaSearch, FaBars } from 'react-icons/fa';
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaLinkedin, FaYoutube, FaEnvelope, FaMapMarkerAlt, FaSearch, FaBars } from 'react-icons/fa';
 
 import logoMobile from '../assets/images/logo-wop-scaled.png';
 import logo from '../assets/images/logo-wop-scaled.png';
@@ -86,6 +86,7 @@ const Header = () => {
                 <li><FaFacebookSquare /></li>
                 <li><FaInstagram /></li>
                 <li><FaTwitter /></li>
+                <li><FaYoutube /></li>
                 <li><FaLinkedin /></li>
               </ul>
             </div>
@@ -180,8 +181,13 @@ const Header = () => {
                               </span>
                             </span>
                             <span className="elementor-grid-item">
-                              <span className="elementor-icon elementor-social-icon elementor-social-icon-pinterest">
-                                <FaPinterest />
+                              <span className="elementor-icon elementor-social-icon elementor-social-icon-youtube">
+                                <FaYoutube />
+                              </span>
+                            </span>
+                            <span className="elementor-grid-item">
+                              <span className="elementor-icon elementor-social-icon elementor-social-icon-linkedin">
+                                <FaLinkedin />
                               </span>
                             </span>
                           </div>
@@ -235,7 +241,7 @@ const Header = () => {
                           <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-aa0009a" data-id="aa0009a" data-element_type="column">
                             <div className="elementor-widget-wrap elementor-element-populated">
                               <div className="d-flex align-items-center justify-content-end gap-3">
-                                <div className="elementor-element elementor-element-732cb76 elementor-widget__width-auto elementor-widget elementor-widget-gva-search-box" data-id="732cb76" data-element_type="widget" data-widget_type="gva-search-box.default">
+                                {/* <div className="elementor-element elementor-element-732cb76 elementor-widget__width-auto elementor-widget elementor-widget-gva-search-box" data-id="732cb76" data-element_type="widget" data-widget_type="gva-search-box.default">
                                   <div className="elementor-widget-container">
                                     <div className="gva-element-gva-search-box gva-element">
                                       <div className="style-1 widget gsc-search-box">
@@ -263,12 +269,12 @@ const Header = () => {
                                       </div>
                                     </div>
                                   </div>
-                                </div>
+                                </div> */}
                                 <div className="elementor-element elementor-element-ea04d1a elementor-widget__width-auto elementor-widget elementor-widget-gva_user" data-id="ea04d1a" data-element_type="widget" data-widget_type="gva_user.default">
                                   <div className="elementor-widget-container">
                                     <div className="gva-element-gva_user gva-element">
                                       <div className="gva-user" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                        <a href="#" className="btn-theme" style={{fontSize: '14px', padding: '8px 12px', whiteSpace: 'nowrap', minWidth: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', lineHeight: '1'}}>Donate Now</a>
+                                        <a href="#" className="btn-theme" style={{fontSize: '14px', whiteSpace: 'nowrap', minWidth: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', lineHeight: '1'}}>Donate Now</a>
                                       </div>
                                     </div>
                                   </div>

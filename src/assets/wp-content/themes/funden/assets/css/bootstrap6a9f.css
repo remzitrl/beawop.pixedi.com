@@ -6,11 +6,11 @@
  */
 :root {
   --funden-font-sans-serif: "Roboto", sans-serif;
-  --e-global-color-primary: #02A95C;
+  --e-global-color-primary: #0d6efd;
   --e-global-color-secondary: #1F2230;
   --e-global-color-text: #696969;
   --funden-link-color:      #1F2230;
-  --funden-hover-color:     #02A95C;
+  --funden-hover-color:     #0d6efd;
   --funden-body-color:      #696969;
   --funden-heading-color:   #1F2230 ;
   --funden-heading-font-family: "Roboto", sans-serif;

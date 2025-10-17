@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './index.css';
-import './font-fixes.css';
 
 import './assets/css/style0899.css';
 import './assets/css/bootstrap6a9f.css';
@@ -58,6 +57,8 @@ import './assets/wp-content/themes/funden/assets/css/wpcf0899.css';
 // Line Awesome icons are now loaded via CDN in index.html to avoid CORS issues
 import './assets/wp-content/themes/funden/assets/js/magnific/magnific-popup0899.css';
 import './assets/wp-content/themes/funden/assets/js/scroll/jquery.mCustomScrollbar.min0899.css';
+
+import './font-fixes.css'; // Load after all other CSS to ensure override
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

@@ -89,18 +89,18 @@ const Popular = () => {
                           <div key={campaign.id} className="item-columns">
                             <div className="campaign-block">
                               <div className="campaign-image">
-                                <a href={`/campaign/${campaign.id}`}>
+                                <div>
                                   <img loading="lazy" decoding="async" width="1100" height="820" src={campaign.image} alt={campaign.title} />
-                                </a>
-                                <a href={`/campaign/${campaign.id}`} className="overlay"></a>
-                                <div className="campaign_loved_html">
-                                  <a href="#" className="love_this_campaign" data-campaign-id={campaign.id}>
-                                    <FaHeart />
-                                  </a>
                                 </div>
-                                <div className="campaign-categories">
+                                <div className="overlay"></div>
+                                <div className="campaign_loved_html">
+                                  <div className="love_this_campaign" data-campaign-id={campaign.id}>
+                                    <FaHeart />
+                                  </div>
+                                </div>
+                                <div className="campaign-categories" style={{borderRadius: '10px'}}>
                                   <span className="posted_in">
-                                    <a href={`/category/${campaign.category}`}>{campaign.category}</a>
+                                    <span>{campaign.category}</span>
                                   </span>
                                 </div>
                               </div>
@@ -108,7 +108,7 @@ const Popular = () => {
                               <div className="campaign-content">
                                 <div className="campaign-title clearfix">
                                   <h4 className="title">
-                                    <a href={`/campaign/${campaign.id}`}>{campaign.title}</a>
+                                    <span>{campaign.title}</span>
                                   </h4>
                                 </div>
 
@@ -137,7 +137,7 @@ const Popular = () => {
                                   <span className="value-goal">${campaign.goal}</span>
                                 </div>
 
-                                <div className="campaign-bottom">
+                                <div className="campaign-bottom" style={{borderRadius: '15px'}}>
                                   <div className="content-inner">
                                     <div className="camapign-time_remaining">
                                       <div className="campaign-time-remaining">
@@ -146,7 +146,7 @@ const Popular = () => {
                                       </div>
                                     </div>
                                     <div className="campaign-link">
-                                      <a className="link-content" href={`/campaign/${campaign.id}`}>Explore</a>
+                                      <a className="link-content" href="#">Donate</a>
                                     </div>
                                   </div>
                                 </div>

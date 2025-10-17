@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaArrowRight, FaTwitter, FaFacebook, FaInstagram, FaPinterest, FaLinkedin } from 'react-icons/fa';
+import { FaArrowRight, FaTwitter, FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 import logoWhite from '../assets/images/logo-wop-scaled.png';
 
@@ -168,7 +168,7 @@ const Footer = () => {
                                                         <div className="elementor-icon-box-wrapper">
                                                             <div className="elementor-icon-box-icon">
                                                                 <span className="elementor-icon">
-                                                                    <i aria-hidden="true" className="las la-phone-volume"></i>
+                                                                    <FaPhone />
                                                                 </span>
                                                             </div>
                                                             <div className="elementor-icon-box-content">
@@ -185,7 +185,7 @@ const Footer = () => {
                                                         <div className="elementor-icon-box-wrapper">
                                                             <div className="elementor-icon-box-icon">
                                                                 <span className="elementor-icon">
-                                                                    <i aria-hidden="true" className="las la-envelope-open"></i>
+                                                                    <FaEnvelope />
                                                                 </span>
                                                             </div>
                                                             <div className="elementor-icon-box-content">
@@ -202,7 +202,7 @@ const Footer = () => {
                                                         <div className="elementor-icon-box-wrapper">
                                                             <div className="elementor-icon-box-icon">
                                                                 <span className="elementor-icon">
-                                                                    <i aria-hidden="true" className="las la-map-marker-alt"></i>
+                                                                    <FaMapMarkerAlt />
                                                                 </span>
                                                             </div>
                                                             <div className="elementor-icon-box-content">
@@ -224,7 +224,7 @@ const Footer = () => {
                                             <div className="elementor-widget-wrap elementor-element-populated">
                                                 <div className="elementor-element elementor-element-33680e7 elementor-widget elementor-widget-text-editor" data-id="33680e7" data-element_type="widget" data-widget_type="text-editor.default">
                                                     <div className="elementor-widget-container">
-                                                        <div>© 2024 Warriors of Peace. All Rights Reserved</div>
+                                                        <div>© 2025 Warriors of Peace. All Rights Reserved</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,9 +253,9 @@ const Footer = () => {
                                                                 </a>
                                                             </span>
                                                             <span className="elementor-grid-item">
-                                                                <a className="elementor-icon elementor-social-icon elementor-social-icon-pinterest elementor-repeater-item-a3e3df5" href="#" target="_blank" rel="noreferrer">
-                                                                    <span className="elementor-screen-only">Pinterest</span>
-                                                                    <FaPinterest />
+                                                                <a className="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-a3e3df5" href="#" target="_blank" rel="noreferrer">
+                                                                    <span className="elementor-screen-only">YouTube</span>
+                                                                    <FaYoutube />
                                                                 </a>
                                                             </span>
                                                             <span className="elementor-grid-item">

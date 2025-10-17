@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPlay, FaArrowRight } from 'react-icons/fa';
+import { FaPlay, FaArrowRight, FaCheckCircle } from 'react-icons/fa';
 
 import post1 from '../assets/wp-content/uploads/2020/12/post-1-600x450.jpg';
 import post2 from '../assets/wp-content/uploads/2020/12/post-2-600x450.jpg';
@@ -43,7 +43,7 @@ const More = () => {
         <div className="elementor-container elementor-column-gap-default">
           <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9cc3714" data-id="9cc3714" data-element_type="column">
             <div className="elementor-widget-wrap elementor-element-populated">
-              <section className="elementor-section elementor-inner-section elementor-element elementor-element-91da19e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91da19e" data-element_type="section" data-settings={{background_background:"classic"}}>
+              <section className="elementor-section elementor-inner-section elementor-element elementor-element-91da19e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91da19e" data-element_type="section" data-settings={{background_background:"classic"}}  style={{borderRadius: '20px'}}>
                 <div className="elementor-container elementor-column-gap-default">
                   <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0cf4f20" data-id="0cf4f20" data-element_type="column" data-settings={{background_background:"classic"}}>
                     <div className="elementor-widget-wrap elementor-element-populated">
@@ -102,27 +102,47 @@ const More = () => {
                       <div className="gva-content-items cleafix">
                         <div className="row">
                           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <article className="post post-block">
+                            <article className="post post-block enhanced-card volunteer-card">
+                              <div className="card-background" style={{
+                                backgroundImage: `url(${post1})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                              }}></div>
+                              <div className="card-overlay"></div>
+                              <div className="card-icon-top-left">
+                                <FaCheckCircle />
+                              </div>
                               <div className="entry-content">
                                 <div className="content-inner clearfix">
                                   <h2 className="entry-title">
                                     <span>Volunteer</span>
                                   </h2>
                                   <div className="title-desc">
-                                    Travel with us to Peru or help with logistics and fundraising.
+                                    <p>Join our mission to make a difference in the lives of children in the Andes. Whether you can travel with us to Peru or help with logistics and fundraising from home, your contribution matters.</p>
                                   </div>
                                 </div>
                               </div>
                             </article>
 
-                            <article className="post post-block">
+                            <article className="post post-block enhanced-card fundraiser-card">
+                              <div className="card-background" style={{
+                                backgroundImage: `url(${post2})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                              }}></div>
+                              <div className="card-overlay"></div>
+                              <div className="card-icon-top-left">
+                                <FaCheckCircle />
+                              </div>
                               <div className="entry-content">
                                 <div className="content-inner clearfix">
                                   <h2 className="entry-title">
                                     <span>Host a Fundraiser</span>
                                   </h2>
                                   <div className="title-desc">
-                                    Organize a local event to support our cause.
+                                    <p>Organize a local event to support our cause. From bake sales to charity runs, every fundraiser helps us reach more children in need.</p>
                                   </div>
                                 </div>
                               </div>
@@ -130,27 +150,47 @@ const More = () => {
                           </div>
 
                           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <article className="post post-block">
+                            <article className="post post-block enhanced-card spread-word-card">
+                              <div className="card-background" style={{
+                                backgroundImage: `url(${post3})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                              }}></div>
+                              <div className="card-overlay"></div>
+                              <div className="card-icon-top-left">
+                                <FaCheckCircle />
+                              </div>
                               <div className="entry-content">
                                 <div className="content-inner clearfix">
                                   <h2 className="entry-title">
                                     <span>Spread the Word</span>
                                   </h2>
                                   <div className="title-desc">
-                                    Share our mission on social media and with your network.
+                                    <p>Share our mission on social media and with your network. Awareness is the first step towards change, and your voice can inspire others to join our cause.</p>
                                   </div>
                                 </div>
                               </div>
                             </article>
 
-                            <article className="post post-block">
+                            <article className="post post-block enhanced-card sponsor-card">
+                              <div className="card-background" style={{
+                                backgroundImage: `url(${post4})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                              }}></div>
+                              <div className="card-overlay"></div>
+                              <div className="card-icon-top-left">
+                                <FaCheckCircle />
+                              </div>
                               <div className="entry-content">
                                 <div className="content-inner clearfix">
                                   <h2 className="entry-title">
                                     <span>Sponsor a Coat</span>
                                   </h2>
                                   <div className="title-desc">
-                                    $20 can provide a warm coat for a child in the Andes.
+                                    <p>Just $20 can provide a warm coat for a child in the Andes. Your direct sponsorship ensures a child stays warm during the harsh mountain winters.</p>
                                   </div>
                                 </div>
                               </div>

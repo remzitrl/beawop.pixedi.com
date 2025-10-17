@@ -118,3 +118,220 @@
   position: relative;
   padding-right: 50px !important;
 }
+
+/* Add spacing between text and ::after icon in buttons - High specificity */
+body .btn::after,
+body .btn-theme::after,
+body .btn-white::after,
+body .btn-gray::after,
+body .btn-black::after,
+body .btn-border::after,
+body .btn-border-white::after,
+body .btn-cta::after,
+body input[type*="submit"]:not(.fa):not(.btn-theme):not(.las)::after,
+body #tribe-events .tribe-events-button::after,
+body .tribe-events-button::after {
+  right: 20px !important; /* Move icon slightly left to create space */
+}
+
+/* Even more specific selectors to ensure override */
+body a.btn-theme::after,
+body a.btn-border::after,
+body a.btn-border-white::after,
+body a.btn-cta::after,
+body .elementor-widget-container a.btn-theme::after,
+body .elementor-widget-container a.btn-border::after,
+body .elementor-widget-container a.btn-border-white::after {
+  right: 20px !important;
+}
+
+/* Footer icon fixes - Consistent styling for all icons */
+.elementor-icon svg,
+.elementor-social-icon svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: currentColor !important;
+  color: #ffffff !important;
+}
+
+/* Exclude our-impact section SVGs from the above styling */
+#our-impact .elementor-icon svg {
+  width: auto !important;
+  height: auto !important;
+  fill: currentColor !important;
+  color: inherit !important;
+}
+
+/* Contact section icons */
+.elementor-icon-box-icon .elementor-icon svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Exclude our-impact section from contact section icon styling */
+#our-impact .elementor-icon-box-icon .elementor-icon svg {
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+/* Exclude why section SVGs from global styling */
+.elementor-element-c087dfb .elementor-icon svg {
+  width: auto !important;
+  height: auto !important;
+  fill: currentColor !important;
+  color: inherit !important;
+}
+
+.elementor-element-c087dfb .elementor-icon-box-icon .elementor-icon svg {
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+/* Social media icons */
+.elementor-social-icon {
+  display: inline-block !important;
+  visibility: visible !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+
+.elementor-social-icon:hover {
+  color: var(--e-global-color-primary) !important;
+  transform: translateY(-2px) !important;
+}
+
+.elementor-social-icon svg {
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+/* Mobile social media icons visibility */
+.header-mobile .socials-2 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  height: 100% !important;
+}
+
+.header-mobile .socials-2 li {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  margin-right: 12px !important;
+  height: 100% !important;
+}
+
+.header-mobile .socials-2 li svg {
+  color: #dddddd !important;
+  font-size: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  vertical-align: middle !important;
+}
+
+.header-mobile .socials-2 li svg:hover {
+  color: var(--e-global-color-primary) !important;
+}
+
+/* Desktop social media icons */
+.header_default_screen .elementor-social-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  height: 100% !important;
+}
+
+.header_default_screen .elementor-social-icon svg {
+  color: #dddddd !important;
+  font-size: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  vertical-align: middle !important;
+}
+
+.header_default_screen .elementor-social-icon:hover svg {
+  color: var(--e-global-color-primary) !important;
+}
+
+/* Footer social media icons vertical centering */
+.elementor-social-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+}
+
+.elementor-social-icon svg {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  vertical-align: middle !important;
+}
+
+/* Additional vertical alignment for containers */
+.header_default_screen .elementor-social-icons-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.header_default_screen .elementor-social-icons-wrapper .elementor-grid {
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  height: 100% !important;
+}
+
+.elementor-social-icons-wrapper {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.elementor-social-icons-wrapper .elementor-grid {
+  justify-content: flex-end !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  height: 100% !important;
+}
+
+/* Mobile header vertical alignment */
+.header-mobile .topbar-mobile .topbar-left {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+.header-mobile .socials-2 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  text-align: center !important;
+  height: 100% !important;
+}
+
+.header-mobile .socials-2 li {
+  margin-right: 12px !important;
+  margin-left: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.header-mobile .socials-2 li:last-child {
+  margin-right: 0 !important;
+}
