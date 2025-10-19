@@ -1,24 +1,45 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './assets/css/style.css';
+import { useScripts } from './hooks/useScripts';
+import { useAOS } from './hooks/useAOS';
+import Header from './components/header';
+import Jumbo from './components/jumbo';
+import Cases from './components/cases';
+import About from './components/about';
+import Service from './components/service';
+import Org from './components/org';
+import Num from './components/num';
+import Testimonial from './components/testimonial';
+import Team from './components/team';
+import Blog from './components/blog';
+import Join from './components/join';
+import Footer from './components/footer';
+
 
 function App() {
+  useScripts();
+  useAOS();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button id="topBtn"><i className="fas fa-arrow-up"></i></button>
+      <div className="hero__banner-two">
+        <Header />
+        <Jumbo />
+      </div>
+      <Cases />
+      <About />
+      <Service />
+      <Org />
+      <Num />
+      <Testimonial />
+      <Team />
+      <Blog />
+      <Join />
+      <Footer />
+    </>
   );
 }
 
