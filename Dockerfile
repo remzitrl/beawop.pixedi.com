@@ -20,10 +20,10 @@ RUN npm run build
 RUN npm install -g serve
 
 # Set default port
-ENV PORT=3000
+ENV PORT=80
 
 # Expose port
 EXPOSE $PORT
 
 # Start the application
-CMD ["serve", "-s", "build", "-l", "${PORT}", "-a", "0.0.0.0"]
+CMD ["sh", "-c", "serve -s build -l ${PORT:-80} -a 0.0.0.0"]
