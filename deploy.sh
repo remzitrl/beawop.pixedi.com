@@ -1,29 +1,36 @@
 #!/bin/bash
 
-# Beawop CapRover Deployment Script
-echo "🚀 Starting Beawop deployment preparation..."
+# Beawop Deployment Script for CapRover
+# Domain: beawop.pixedi.com
 
-# Install dependencies
-echo "📦 Installing dependencies..."
-npm install
+echo "🚀 Starting Beawop deployment to CapRover..."
 
-# Build the application
-echo "🔨 Building React application..."
-npm run build
-
-# Check if build was successful
-if [ -d "build" ]; then
-    echo "✅ Build successful!"
-    echo "📁 Build directory created with $(du -sh build | cut -f1) of files"
-else
-    echo "❌ Build failed!"
+# Check if caprover CLI is installed
+if ! command -v caprover &> /dev/null; then
+    echo "❌ CapRover CLI is not installed. Please install it first:"
+    echo "npm install -g caprover"
     exit 1
 fi
 
-echo "🎉 Ready for CapRover deployment!"
-echo "📋 Next steps:"
-echo "1. Login to CapRover dashboard"
-echo "2. Create app 'beawop'"
-echo "3. Set domain to 'beawop.pixedi.com'"
-echo "4. Upload this folder or connect via Git"
-echo "5. Enable HTTPS and force HTTPS"
+# Build the React app
+echo "📦 Building React application..."
+npm run build
+
+if [ $? -ne 0 ]; then
+    echo "❌ Build failed. Please fix the errors and try again."
+    exit 1
+fi
+
+echo "✅ Build completed successfully!"
+
+# Deploy to CapRover
+echo "🚀 Deploying to CapRover..."
+caprover deploy --app beawop
+
+if [ $? -eq 0 ]; then
+    echo "✅ Deployment completed successfully!"
+    echo "🌐 Your site should be available at: https://beawop.pixedi.com"
+else
+    echo "❌ Deployment failed. Please check the CapRover logs."
+    exit 1
+fi

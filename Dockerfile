@@ -1,7 +1,6 @@
-# Use Node.js 18 as base image
-FROM node:18-alpine
+# Build stage
+FROM node:18-alpine as build
 
-# Set working directory
 WORKDIR /app
 
 # Copy package files
@@ -13,17 +12,20 @@ RUN npm ci --only=production
 # Copy source code
 COPY . .
 
-# Build the React app
+# Build the app
 RUN npm run build
 
-# Install serve to run the app
-RUN npm install -g serve
+# Production stage
+FROM nginx:alpine
 
-# Set default port
-ENV PORT=80
+# Copy built app from build stage
+COPY --from=build /app/build /usr/share/nginx/html
 
-# Expose port
-EXPOSE $PORT
+# Copy custom nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Start the application
-CMD ["sh", "-c", "serve -s build --listen 0.0.0.0:${PORT:-80}"]
+# Expose port 80
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]

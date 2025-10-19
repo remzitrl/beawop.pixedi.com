@@ -1,30 +1,41 @@
 @echo off
-REM Beawop CapRover Deployment Script for Windows
-echo 🚀 Starting Beawop deployment preparation...
+REM Beawop Deployment Script for CapRover (Windows)
+REM Domain: beawop.pixedi.com
 
-REM Install dependencies
-echo 📦 Installing dependencies...
-npm install
+echo 🚀 Starting Beawop deployment to CapRover...
 
-REM Build the application
-echo 🔨 Building React application...
-npm run build
-
-REM Check if build was successful
-if exist "build" (
-    echo ✅ Build successful!
-    echo 📁 Build directory created
-) else (
-    echo ❌ Build failed!
+REM Check if caprover CLI is installed
+where caprover >nul 2>nul
+if %errorlevel% neq 0 (
+    echo ❌ CapRover CLI is not installed. Please install it first:
+    echo npm install -g caprover
     pause
     exit /b 1
 )
 
-echo 🎉 Ready for CapRover deployment!
-echo 📋 Next steps:
-echo 1. Login to CapRover dashboard
-echo 2. Create app 'beawop'
-echo 3. Set domain to 'beawop.pixedi.com'
-echo 4. Upload this folder or connect via Git
-echo 5. Enable HTTPS and force HTTPS
+REM Build the React app
+echo 📦 Building React application...
+call npm run build
+
+if %errorlevel% neq 0 (
+    echo ❌ Build failed. Please fix the errors and try again.
+    pause
+    exit /b 1
+)
+
+echo ✅ Build completed successfully!
+
+REM Deploy to CapRover
+echo 🚀 Deploying to CapRover...
+call caprover deploy --app beawop
+
+if %errorlevel% equ 0 (
+    echo ✅ Deployment completed successfully!
+    echo 🌐 Your site should be available at: https://beawop.pixedi.com
+) else (
+    echo ❌ Deployment failed. Please check the CapRover logs.
+    pause
+    exit /b 1
+)
+
 pause
