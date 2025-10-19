@@ -19,8 +19,11 @@ RUN npm run build
 # Install serve to run the app
 RUN npm install -g serve
 
-# Expose port 3000
-EXPOSE 3000
+# Set default port
+ENV PORT=3000
+
+# Expose port
+EXPOSE $PORT
 
 # Start the application
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["serve", "-s", "build", "-l", "0.0.0.0:${PORT}"]
