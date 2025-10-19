@@ -26,4 +26,4 @@ ENV PORT=80
 EXPOSE $PORT
 
 # Start the application
-CMD ["sh", "-c", "serve -s build -l ${PORT:-80} -a 0.0.0.0"]
+CMD ["sh", "-c", "serve -s build --listen 0.0.0.0:${PORT:-80}"]
