@@ -26,4 +26,4 @@ ENV PORT=3000
 EXPOSE $PORT
 
 # Start the application
-CMD ["serve", "-s", "build", "-l", "0.0.0.0:${PORT}"]
+CMD ["serve", "-s", "build", "-l", "${PORT}", "-a", "0.0.0.0"]
