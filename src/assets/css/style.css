@@ -17447,6 +17447,47 @@ ul > li {
     border-radius: 40px;
   }
 }
+.gallery__body-layer-no-click {
+  position: relative;
+  z-index: 1;
+  cursor: default;
+}
+.gallery__body-layer-no-click::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 16px;
+  background: rgba(221, 221, 221, 0.2);
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+@media screen and (min-width: 1400px) {
+  .gallery__body-layer-no-click::after {
+    border-radius: 40px;
+  }
+}
+.gallery__body-layer-no-click:hover::after {
+  border-radius: 16px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+@media screen and (min-width: 1400px) {
+  .gallery__body-layer-no-click:hover::after {
+    border-radius: 40px;
+  }
+}
 .gallery__body-two--img {
   position: relative;
   z-index: -9;
