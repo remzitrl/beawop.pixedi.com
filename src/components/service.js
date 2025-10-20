@@ -7,8 +7,8 @@ const Service = () => {
                 <div className="row">
                     <div className="col-12 col-md-9 col-lg-6 text-center m-auto service__m" data-aos="fade-down"
                         data-aos-duration="1000">
-                        <h2 className="global__heading m-0">Our Features Services</h2>
-                        <p className="about__desc global__desc mt-3 mb-0">We believe that we can save more life with you.</p>
+                        <h2 className="global__heading m-0">Our Mission in Action</h2>
+                        <p className="about__desc global__desc mt-3 mb-0">With your support, we can reach more communities, provide warmth, and make a lasting impact.</p>
                     </div>
                 </div>
                 <div className="row">
@@ -19,10 +19,7 @@ const Service = () => {
                             </div>
                             <div className="">
                                 <h3 className="service__card-heading global__heading">Give Donation</h3>
-                                <p className="service__card-desc global__desc mt-3 mb-0">The evidence is clear. The ability to
-                                    learn to
-                                    read is single significant factor potential. Became a volunteer people
-                                    and the community.</p>
+                                <p className="service__card-desc global__desc mt-3 mb-0">Your generosity brings warmth and hope changes to families in need.</p>
                             </div>
                         </div>
                     </div>
@@ -34,10 +31,7 @@ const Service = () => {
 
                             <div className="">
                                 <h3 className="service__card-heading global__heading">Become Volunteer</h3>
-                                <p className="service__card-desc global__desc mt-3 mb-0">The evidence is clear. The ability to
-                                    learn to
-                                    read is single significant factor potential. Became a volunteer people
-                                    and the community.</p>
+                                <p className="service__card-desc global__desc mt-3 mb-0">Be part of a movement that lives — one coat at a time.</p>
                             </div>
                         </div>
                     </div>

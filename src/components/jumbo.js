@@ -9,15 +9,16 @@ const Jumbo = () => {
                         <div className="col-12 col-lg-6 position-relative">
                             <div className="d-flex align-items-center">
                                 <img className="hero__two-i" src="/assets/img/8start.svg" alt="icon" />
-                                <h4 className="global__rise">Raise your Hand to the right place
+                                <h4 className="global__rise">Share Your Warmth - Donate a Lightly Used Coat Today
                                 </h4>
                             </div>
-                            <h1 className="global__title global__title-dark">Change the world by helping the people</h1>
-                            <p className="global__desc">Crowdfunding is a way to raise money for an individual or organization
-                                by collecting donations through family, friends
-                                strangers and more.</p>
+                            <h1 className="global__title global__title-dark">Fighting Cold with Kindness</h1>
+                            <p className="global__desc">
+                                We’re collecting coats and donations to bring warmth and hope to families in the Andes.
+                                Every jacket, coat, or small gift helps someone face the cold with comfort and care.
+                            </p>
                             <div className="hero__four-element">
-                                <a href="#" className="global__btn">Donate Now
+                                <a href="#" className="global__btn">Donate a Coat
                                     <i className="fa-solid fa-arrow-up-long global__btn-arrow"></i>
                                 </a>
                                 <img className="img-fluid d-none d-lg-block" src="/assets/img/element-2.png" alt="image" />

@@ -35,7 +35,6 @@ function App() {
       <Org />
       <Num />
       <Testimonial />
-      <Team />
       <Blog />
       <Join />
       <Footer />

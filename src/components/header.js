@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-white menu menu__scroll">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white menu menu__scroll global__transparent">
                 <div className="container p-sm-0">
                     <a className="navbar-brand menu__logo p-0 m-0" href="#" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
                         <img className="menu__logo-img" src="/assets/img/WOP.svg" alt="logo" style={{height: '50px', width: 'auto'}} />

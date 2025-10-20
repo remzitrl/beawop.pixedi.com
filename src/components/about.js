@@ -11,7 +11,7 @@ const About = () => {
                                 <img className="img-fluid" src="/assets/img/add-1.png" alt="image" />
                             </div>
                             <div className="about__image">
-                                <img className="img-fluid" src="/assets/img/add-2.png" alt="image" />
+                                <img className="img-fluid" src="/assets/img/hands.webp" alt="image" />
                             </div>
                         </div>
                     </div>

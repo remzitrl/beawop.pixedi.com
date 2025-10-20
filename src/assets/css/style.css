@@ -14508,8 +14508,12 @@ ul > li {
   line-height: 33px;
 }
 
-.cases__card-range .global__desc {
-  min-height: 140px;
+.cases__card .card-body .cases__card-range {
+  min-height: 265px;
+}
+
+.cases__card .text-center .global__btn {
+  padding: 8px 0 !important;
 }
 
 @media screen and (min-width: 568px) {
@@ -16203,6 +16207,10 @@ ul > li {
 .testimonial__body-slider .slick-slide {
   margin: 0 0;
   padding: 0 0 !important;
+  height: auto;
+}
+.testimonial__body-slider .slick-slide > div {
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .testimonial__body-slider .slick-slide {
@@ -16258,6 +16266,10 @@ ul > li {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   border: 2px solid transparent;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .testimonial__card:hover {
   -webkit-transition: all 0.2s linear;
@@ -16311,6 +16323,16 @@ ul > li {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+.testimonial__card .d-flex {
+  margin-top: auto;
+}
+.testimonial__card .d-flex img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
 @media screen and (min-width: 576px) {
   .testimonial__card-desc {
     font-size: 16px;
@@ -16322,6 +16344,13 @@ ul > li {
   display: grid !important;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
+}
+.testimonial .slick-track {
+  display: flex !important;
+  align-items: stretch !important;
+}
+.testimonial .slick-slide {
+  height: auto !important;
 }
 .testimonial__slick {
   display: -webkit-box;

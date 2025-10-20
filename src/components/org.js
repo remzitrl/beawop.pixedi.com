@@ -22,8 +22,8 @@ const Org = () => {
                                     <img className="org__li-img--icon" src="/assets/img/campain.svg" alt="" />
                                 </div>
                                 <div className="">
-                                    <h3 className="org__li-name">Direct Impact</h3>
-                                    <p className="org__desc global__desc mt-2 mb-0">Every donation goes directly to purchasing and distributing coats to families in need.</p>
+                                    <h3 className="org__li-name">Direct Aid</h3>
+                                    <p className="org__desc global__desc mt-2 mb-0">Coats are purchased and distributed directly to communities in need.</p>
                                 </div>
                             </li>
                             <li className="org__li">
@@ -32,7 +32,16 @@ const Org = () => {
                                 </div>
                                 <div className="">
                                     <h3 className="org__li-name">Community Partnerships</h3>
-                                    <p className="org__desc global__desc mt-2 mb-0">We work closely with local leaders to ensure effective distribution and long-term support.</p>
+                                    <p className="org__desc global__desc mt-2 mb-0">We collaborate with local leaders to ensure effective distribution and long-term support.</p>
+                                </div>
+                            </li>
+                            <li className="org__li">
+                                <div className="org__li-img">
+                                    <img className="org__li-img--icon" src="/assets/img/donation.svg" alt="" />
+                                </div>
+                                <div className="">
+                                    <h3 className="org__li-name">Empowering Local Economies</h3>
+                                    <p className="org__desc global__desc mt-2 mb-0">Where possible, we source coats from local producers to support the regional economy.</p>
                                 </div>
                             </li>
                             <li className="org__li">
@@ -40,8 +49,8 @@ const Org = () => {
                                     <img className="org__li-img--icon" src="/assets/img/money.svg" alt="" />
                                 </div>
                                 <div className="">
-                                    <h3 className="org__li-name">Sustainable Solutions</h3>
-                                    <p className="org__desc global__desc mt-2 mb-0">We focus on building lasting relationships and addressing long-term community needs.</p>
+                                    <h3 className="org__li-name">Sustained Impact</h3>
+                                    <p className="org__desc global__desc mt-2 mb-0">After distribution, we work with communities to address long-term infrastructure needs.</p>
                                 </div>
                             </li>
                         </ul>
