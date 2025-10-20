@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="row justify-content-between">
                         <div className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-between">
                             <a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
-                                <img className="img-fluid" src="/assets/img/WOP.svg" alt="logo" style={{ height: '70px', width: 'auto' }} />
+                                <img className="img-fluid" src="/assets/img/WOP-white.svg" alt="logo" style={{ height: '70px', width: 'auto' }} />
                             </a>
                             <div className="footer__social">
                                 <ul className="footer__social-ul">
@@ -112,7 +112,7 @@ const Footer = () => {
                     <hr className="footer__border" />
                     <div className="row">
                         <div className="col-12 text-center">
-                            <p className="footer__bottom">Copyright © 2025 Warriors of Peace. All rights reserved. | Bringing Hope One Coat at a Time</p>
+                            <p className="footer__bottom">Copyright © 2025 Warriors of Peace. All rights reserved. | Powered by <a href="https://www.pixedi.com/" target="_blank" rel="noopener noreferrer">Pixedi</a></p>
                         </div>
                     </div>
                 </div>

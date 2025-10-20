@@ -16064,7 +16064,7 @@ ul > li {
   }
 }
 .org__li-img {
-  background: #00715D;
+  background: white;
   border-radius: 100px;
   padding: 15px;
   margin: 0 20px 0 0;
@@ -16086,8 +16086,8 @@ ul > li {
   }
 }
 .org__li-img--icon {
-  width: 36px;
-  height: 36px;
+  width: 70px;
+  height: 70px;
 }
 
 .num {

@@ -16,9 +16,7 @@ const Cases = () => {
                     <div className="cases__slider">
                         <div className="card cases__card">
                             <div className="cases__card-img">
-                                <a href="single-cases.html">
-                                    <img className="img-fluid w-100" src="/assets/img/img-1.png" alt="image" />
-                                </a>
+                                <img className="img-fluid w-100" src="/assets/img/img-1.png" alt="image" />
                                 <h4 className="cases__card-tag">Current Campaigns</h4>
                             </div>
                             <div className="card-body px-4">
@@ -29,7 +27,7 @@ const Cases = () => {
                                     </span>
                                 </div>
                                 <div className="">
-                                    <a href="single-cases.html" className="cases__card-title">Coats for the Andes</a>
+                                    <h5 className="cases__card-title">Coats for the Andes</h5>
                                 </div>
                                 <div className="cases__card-range d-flex flex-column">
                                     <p className="global__desc m-0">Our flagship project. Help us provide 1,000 coats to vulnerable families in Global before winter sets in.</p>
@@ -58,9 +56,7 @@ const Cases = () => {
                         </div>
                         <div className="card cases__card">
                             <div className="cases__card-img">
-                                <a href="single-cases.html">
-                                    <img className="img-fluid w-100" src="/assets/img/img-2.png" alt="image" />
-                                </a>
+                                <img className="img-fluid w-100" src="/assets/img/img-2.png" alt="image" />
                                 <h4 className="cases__card-tag">Current Campaigns</h4>
                             </div>
                             <div className="card-body px-4">
@@ -71,7 +67,7 @@ const Cases = () => {
                                     </span>
                                 </div>
                                 <div className="">
-                                    <a href="single-cases.html" className="cases__card-title">Emergency Relief Fund</a>
+                                    <h5 className="cases__card-title">Emergency Relief Fund</h5>
                                 </div>
                                 <div className="cases__card-range d-flex flex-column">
                                     <p className="global__desc m-0">A reserve fund to provide immediate assistance for unexpected weather-related emergencies.</p>
@@ -100,9 +96,7 @@ const Cases = () => {
                         </div>
                         <div className="card cases__card">
                             <div className="cases__card-img">
-                                <a href="single-cases.html">
-                                    <img className="img-fluid w-100" src="/assets/img/img-3.png" alt="image" />
-                                </a>
+                                <img className="img-fluid w-100" src="/assets/img/img-3.png" alt="image" />
                                 <h4 className="cases__card-tag">Current Campaigns</h4>
                             </div>
                             <div className="card-body px-4">
@@ -113,7 +107,7 @@ const Cases = () => {
                                     </span>
                                 </div>
                                 <div className="">
-                                    <a href="single-cases.html" className="cases__card-title">Volunteer Outreach</a>
+                                    <h5 className="cases__card-title">Volunteer Outreach</h5>
                                 </div>
                                 <div className="cases__card-range d-flex flex-column">
                                     <p className="global__desc m-0">Be a Warrior of Peace! Join our efforts to distribute coats and organize fundraising events</p>
@@ -127,9 +121,7 @@ const Cases = () => {
                         </div>
                         <div className="card cases__card">
                             <div className="cases__card-img">
-                                <a href="single-cases.html">
-                                    <img className="img-fluid w-100" src="/assets/img/img-3.png" alt="image" />
-                                </a>
+                                <img className="img-fluid w-100" src="/assets/img/img-3.png" alt="image" />
                                 <h4 className="cases__card-tag">Future Projects</h4>
                             </div>
                             <div className="card-body px-4">
@@ -140,7 +132,7 @@ const Cases = () => {
                                     </span>
                                 </div>
                                 <div className="">
-                                    <a href="single-cases.html" className="cases__card-title">Future Projects</a>
+                                    <h5 className="cases__card-title">Future Projects</h5>
                                 </div>
                                 <div className="cases__card-range d-flex flex-column">
                                     <p className="global__desc m-0">Beyond coats, we plan to expand our efforts to include food security, clean water, and shelter. To stay up to date on our future projects join our Mailing List.</p>

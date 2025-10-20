@@ -1,4 +1,8 @@
 import React from 'react';
+import aidIcon from '../assets/img/aid.png';
+import partnerIcon from '../assets/img/partner.png';
+import econIcon from '../assets/img/econ.png';
+import impactIcon from '../assets/img/impact.png';
 
 const Org = () => {
     return (
@@ -19,7 +23,7 @@ const Org = () => {
                         <ul>
                             <li className="org__li">
                                 <div className="org__li-img">
-                                    <img className="org__li-img--icon" src="/assets/img/campain.svg" alt="" />
+                                    <img className="org__li-img--icon" src={aidIcon} alt="" />
                                 </div>
                                 <div className="">
                                     <h3 className="org__li-name">Direct Aid</h3>
@@ -28,7 +32,7 @@ const Org = () => {
                             </li>
                             <li className="org__li">
                                 <div className="org__li-img">
-                                    <img className="org__li-img--icon" src="/assets/img/donation.svg" alt="" />
+                                    <img className="org__li-img--icon" src={partnerIcon} alt="" />
                                 </div>
                                 <div className="">
                                     <h3 className="org__li-name">Community Partnerships</h3>
@@ -37,7 +41,7 @@ const Org = () => {
                             </li>
                             <li className="org__li">
                                 <div className="org__li-img">
-                                    <img className="org__li-img--icon" src="/assets/img/donation.svg" alt="" />
+                                    <img className="org__li-img--icon" src={econIcon} alt="" />
                                 </div>
                                 <div className="">
                                     <h3 className="org__li-name">Empowering Local Economies</h3>
@@ -46,7 +50,7 @@ const Org = () => {
                             </li>
                             <li className="org__li">
                                 <div className="org__li-img">
-                                    <img className="org__li-img--icon" src="/assets/img/money.svg" alt="" />
+                                    <img className="org__li-img--icon" src={impactIcon} alt="" />
                                 </div>
                                 <div className="">
                                     <h3 className="org__li-name">Sustained Impact</h3>
