@@ -25,14 +25,14 @@ const Cases = () => {
                                 <div className="d-flex">
                                     <img className="cases__card-i" src="/assets/img/location.svg" alt="icon" />
                                     <span className="cases__card-location">
-                                        Peru
+                                        Global
                                     </span>
                                 </div>
                                 <div className="">
                                     <a href="single-cases.html" className="cases__card-title">Coats for the Andes</a>
                                 </div>
                                 <div className="cases__card-range">
-                                    <p className="global__desc m-0">Our flagship project. Help us provide 1,000 coats to vulnerable families in Peru before winter sets in.</p>
+                                    <p className="global__desc m-0">Our flagship project. Help us provide 1,000 coats to vulnerable families in Global before winter sets in.</p>
                                     <div className="progress cases__card-progress">
                                         <div className="progress-bar cases__card-progress--bar" role="progressbar"
                                             style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -149,10 +149,10 @@ const Cases = () => {
                                     </span>
                                 </div>
                                 <div className="">
-                                    <a href="single-cases.html" className="cases__card-title">Beyond coats, we plan to expand our efforts to include food security, clean water, and shelter.</a>
+                                    <a href="single-cases.html" className="cases__card-title">Future Projects</a>
                                 </div>
                                 <div className="cases__card-range">
-                                    <p className="global__desc m-0">Future Projects</p>
+                                    <p className="global__desc m-0">Beyond coats, we plan to expand our efforts to include food security, clean water, and shelter.</p>
                                     <div className="progress cases__card-progress">
                                         <div className="progress-bar cases__card-progress--bar" role="progressbar"
                                             style={{width: "2%"}} aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">
@@ -162,7 +162,7 @@ const Cases = () => {
                                         <div className="d-flex align-items-center cases__card-range--bottom---m gap-2">
                                             <img className="cases__card-range--dollar" src="/assets/img/box.svg" alt="icon" />
                                             <span className="cases__card-range--price">
-                                                Raised: $2,000
+                                                Raised: $0
                                             </span>
                                         </div>
                                         <div className="d-flex align-items-center gap-2">

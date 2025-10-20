@@ -17,7 +17,7 @@ const Jumbo = () => {
                                 by collecting donations through family, friends
                                 strangers and more.</p>
                             <div className="hero__four-element">
-                                <a href="donate.html" className="global__btn">Get Started
+                                <a href="#" className="global__btn">Donate Now
                                     <i className="fa-solid fa-arrow-up-long global__btn-arrow"></i>
                                 </a>
                                 <img className="img-fluid d-none d-lg-block" src="/assets/img/element-2.png" alt="image" />
@@ -27,16 +27,16 @@ const Jumbo = () => {
                             <div className="swiper mySwiper hero__four-slider">
                                 <div className="swiper-wrapper hero__four-slider--wrap">
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brt">
-                                        <img className="img-fluid" src="/assets/img/add-img-2.png" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/1.webp" alt="image" />
                                     </div>
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brb">
-                                        <img className="img-fluid" src="/assets/img/add-img.png" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/2.webp" alt="image" />
                                     </div>
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brt">
-                                        <img className="img-fluid" src="/assets/img/header-img-2.png" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/3.webp" alt="image" />
                                     </div>
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brb">
-                                        <img className="img-fluid" src="/assets/img/header-img-3.png" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/4.webp" alt="image" />
                                     </div>
                                 </div>
                                 <div className="swiper-pagination"></div>

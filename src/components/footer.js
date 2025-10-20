@@ -4,7 +4,7 @@ const Footer = () => {
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ 
+            element.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
@@ -16,28 +16,27 @@ const Footer = () => {
             <div className="footer">
                 <div className="container p-sm-0">
                     <div className="row justify-content-between">
-                        <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-between">
                             <a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
-                                <img className="img-fluid" src="/assets/img/WOP.svg" alt="logo" style={{height: '50px', width: 'auto'}} />
+                                <img className="img-fluid" src="/assets/img/WOP.svg" alt="logo" style={{ height: '70px', width: 'auto' }} />
                             </a>
-                            <p className="global__desc footer__desc">Warriors of Peace is dedicated to providing direct aid and fostering long-term change in vulnerable communities. Together, we can bring warmth, dignity, and hope to those who need it most.</p>
                             <div className="footer__social">
                                 <ul className="footer__social-ul">
                                     <li>
                                         <a className="footer__social-link" href="https://www.facebook.com/"><i
-                                                className="fa-brands fa-facebook"></i></a>
+                                            className="fa-brands fa-facebook"></i></a>
                                     </li>
                                     <li>
                                         <a className="footer__social-link" href="https://linkedin.com/"><i
-                                                className="fa-brands fa-linkedin-in"></i></a>
+                                            className="fa-brands fa-linkedin-in"></i></a>
                                     </li>
                                     <li>
                                         <a className="footer__social-link" href="https://www.instagram.com/"><i
-                                                className="fa-brands fa-instagram"></i></a>
+                                            className="fa-brands fa-instagram"></i></a>
                                     </li>
                                     <li>
                                         <a className="footer__social-link" href="https://twitter.com/"><i
-                                                className="fa-brands fa-twitter"></i></a>
+                                            className="fa-brands fa-twitter"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -106,20 +105,14 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6 col-xl-4 mt-md-5 mt-xl-0">
-                            <h4 className="footer__sub">Stay Connected</h4>
-                            <p className="global__desc footer__desc">Join our newsletter to stay updated about our latest campaigns, impact stories, and ways you can help make a difference.
-                            </p>
-                            <form action="#" method="POST" className="d-flex position-relative">
-                                <input className="footer__inp form-control" type="email" placeholder="Enter your email" />
-                                <button className="global__btn footer__inp-btn">Subscribe</button>
-                            </form>
+                        <div className="col-12 col-md-6 col-xl-4 mt-xl-0">
+                            <p className="global__desc footer__desc m-0">Warriors of Peace is dedicated to providing direct aid and fostering long-term change in vulnerable communities. Together, we can bring warmth, dignity, and hope to those who need it most.</p>
                         </div>
                     </div>
                     <hr className="footer__border" />
                     <div className="row">
                         <div className="col-12 text-center">
-                            <p className="footer__bottom">Copyright © 2023 Warriors of Peace. All rights reserved. | Bringing Hope One Coat at a Time</p>
+                            <p className="footer__bottom">Copyright © 2025 Warriors of Peace. All rights reserved. | Bringing Hope One Coat at a Time</p>
                         </div>
                     </div>
                 </div>

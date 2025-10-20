@@ -14,7 +14,7 @@ const Join = () => {
                                 <h2 className="join__heading global__heading">Join Your hand with us for a better life and
                                     future
                                 </h2>
-                                <button className="join__card-layer--btn global__btn">Discover More</button>
+                                <button className="join__card-layer--btn global__btn">Join Us</button>
                             </div>
                         </div>
                     </div>
