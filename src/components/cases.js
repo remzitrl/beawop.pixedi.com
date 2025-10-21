@@ -15,8 +15,8 @@ const Cases = () => {
                 <div className="row">
                     <div className="cases__slider">
                         <div className="card cases__card">
-                            <div className="cases__card-img">
-                                <img className="img-fluid w-100" src="/assets/img/img-1.png" alt="image" />
+                            <div className="cases__card-img" style={{height: '240px', overflow: 'hidden', position: 'relative'}}>
+                                <img className="img-fluid w-100" src="/assets/img/Slider-1.webp" alt="image" style={{height: '100%', objectFit: 'cover'}} />
                                 <h4 className="cases__card-tag">Current Campaigns</h4>
                             </div>
                             <div className="card-body px-4">
@@ -55,8 +55,8 @@ const Cases = () => {
                             </div>
                         </div>
                         <div className="card cases__card">
-                            <div className="cases__card-img">
-                                <img className="img-fluid w-100" src="/assets/img/img-2.png" alt="image" />
+                            <div className="cases__card-img" style={{height: '240px', overflow: 'hidden', position: 'relative'}}>
+                                <img className="img-fluid w-100" src="/assets/img/Slider-4.webp" alt="image" style={{height: '100%', objectFit: 'cover'}} />
                                 <h4 className="cases__card-tag">Current Campaigns</h4>
                             </div>
                             <div className="card-body px-4">
@@ -95,8 +95,8 @@ const Cases = () => {
                             </div>
                         </div>
                         <div className="card cases__card">
-                            <div className="cases__card-img">
-                                <img className="img-fluid w-100" src="/assets/img/img-3.png" alt="image" />
+                            <div className="cases__card-img" style={{height: '240px', overflow: 'hidden', position: 'relative'}}>
+                                <img className="img-fluid w-100" src="/assets/img/Slider-3.webp" alt="image" style={{height: '100%', objectFit: 'cover'}} />
                                 <h4 className="cases__card-tag">Current Campaigns</h4>
                             </div>
                             <div className="card-body px-4">
@@ -120,8 +120,8 @@ const Cases = () => {
                             </div>
                         </div>
                         <div className="card cases__card">
-                            <div className="cases__card-img">
-                                <img className="img-fluid w-100" src="/assets/img/img-3.png" alt="image" />
+                            <div className="cases__card-img" style={{height: '240px', overflow: 'hidden', position: 'relative'}}>
+                                <img className="img-fluid w-100" src="/assets/img/img-2.webp" alt="image" style={{height: '100%', objectFit: 'cover'}} />
                                 <h4 className="cases__card-tag">Future Projects</h4>
                             </div>
                             <div className="card-body px-4">
