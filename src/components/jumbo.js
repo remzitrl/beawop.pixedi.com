@@ -28,16 +28,16 @@ const Jumbo = () => {
                             <div className="swiper mySwiper hero__four-slider">
                                 <div className="swiper-wrapper hero__four-slider--wrap">
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brt">
-                                        <img className="img-fluid" src="/assets/img/1.webp" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/Slider-1.webp" alt="image" />
                                     </div>
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brb">
-                                        <img className="img-fluid" src="/assets/img/2.webp" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/Slider-2.webp" alt="image" />
                                     </div>
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brt">
-                                        <img className="img-fluid" src="/assets/img/3.webp" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/Slider-3.webp" alt="image" />
                                     </div>
                                     <div className="swiper-slide hero__four-slider--img hero__four-slider--brb">
-                                        <img className="img-fluid" src="/assets/img/4.webp" alt="image" />
+                                        <img className="img-fluid" src="/assets/img/Slider-4.webp" alt="image" />
                                     </div>
                                 </div>
                                 <div className="swiper-pagination"></div>
