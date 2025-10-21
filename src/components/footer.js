@@ -112,7 +112,7 @@ const Footer = () => {
                     <hr className="footer__border" />
                     <div className="row">
                         <div className="col-12 text-center">
-                            <p className="footer__bottom">Copyright © 2025 Warriors of Peace. All rights reserved. | Powered by <a href="https://www.pixedi.com/" target="_blank" rel="noopener noreferrer">Pixedi</a></p>
+                            <p className="footer__bottom">Copyright © 2025 Warriors of Peace. All rights reserved. | Powered by <a href="https://www.pixedi.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/img/pixedi-logo.png" alt="Pixedi" style={{ height: '28px', width: 'auto', verticalAlign: 'middle', marginTop: '-2px' }} /></a></p>
                         </div>
                     </div>
                 </div>
